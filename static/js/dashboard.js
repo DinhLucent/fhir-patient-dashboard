@@ -1,16 +1,32 @@
+let allPatients = [];
 let currentPatient = null;
 let chart = null;
 
-async function selectPatient(id) {
-    // UI Update
-    document.querySelectorAll('.patient-card').forEach(c => c.classList.remove('active'));
-    // Finding selected element by some way (iterating cards)
+async function loadInitialData() {
+    try {
+        const response = await fetch('/api/patients');
+        allPatients = await response.json();
 
-    const response = await fetch('/api/patients');
-    const patients = await response.json();
-    currentPatient = patients.find(p => p.id === id);
+        // Auto-select first patient if none selected
+        if (allPatients.length > 0 && !currentPatient) {
+            selectPatient(allPatients[0].id);
+        }
+    } catch (err) {
+        console.error("Failed to load clinical data:", err);
+    }
+}
 
-    document.querySelector(`[onclick="selectPatient('${id}')"]`).classList.add('active');
+function selectPatient(id) {
+    currentPatient = allPatients.find(p => p.id === id);
+    if (!currentPatient) return;
+
+    // UI Update: Active Card
+    document.querySelectorAll('.patient-card').forEach(c => {
+        c.classList.remove('active');
+        if (c.dataset.id === id || c.getAttribute('onclick')?.includes(id)) {
+            c.classList.add('active');
+        }
+    });
 
     updateChart();
     updateTable();
@@ -55,7 +71,12 @@ function updateChart() {
                 }
             },
             plugins: {
-                legend: { display: false }
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    titleFont: { family: 'Outfit' },
+                    bodyFont: { family: 'Outfit' }
+                }
             }
         }
     });
@@ -81,10 +102,5 @@ function updateTable() {
 
 // Initial Load
 window.onload = () => {
-    // Select first patient automatically
-    const firstCard = document.querySelector('.patient-card');
-    if (firstCard) {
-        const id = firstCard.getAttribute('onclick').match(/'([^']+)'/)[1];
-        selectPatient(id);
-    }
+    loadInitialData();
 };
