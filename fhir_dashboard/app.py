@@ -56,48 +56,31 @@ def api_patients():
 
 @app.route("/api/stats")
 def api_stats():
-    """Return population-level statistics."""
+    """Return population-level statistics and clinical risk flags."""
     patients = get_patients()
     if not patients:
         return jsonify({})
     
     all_obs = []
+    high_risk_count = 0
     for p in patients:
         all_obs.extend(p.observations)
+        # Clinical Rule: VTE Risk assessment for elderly
+        if p.age > 65:
+            high_risk_count += 1
     
     stats = {
         "count": len(patients),
-        "avg_age": sum(p.age for p in patients) / len(patients),
+        "avg_age": round(sum(p.age for p in patients) / len(patients), 1),
         "vitals_recorded": len(all_obs),
+        "clinical_flags": {
+            "vte_risk_elderly": high_risk_count
+        },
         "heart_rates": [o.value for o in all_obs if o.display == "Heart rate"]
     }
     
     if stats["heart_rates"]:
-        stats["avg_heart_rate"] = sum(stats["heart_rates"]) / len(stats["heart_rates"])
-    
-    return jsonify(stats)
-
-
-@app.route("/api/stats")
-def api_stats():
-    """Return population-level statistics."""
-    patients = get_patients()
-    if not patients:
-        return jsonify({})
-    
-    all_obs = []
-    for p in patients:
-        all_obs.extend(p.observations)
-    
-    stats = {
-        "count": len(patients),
-        "avg_age": sum(p.age for p in patients) / len(patients),
-        "vitals_recorded": len(all_obs),
-        "heart_rates": [o.value for o in all_obs if o.display == "Heart rate"]
-    }
-    
-    if stats["heart_rates"]:
-        stats["avg_heart_rate"] = sum(stats["heart_rates"]) / len(stats["heart_rates"])
+        stats["avg_heart_rate"] = round(sum(stats["heart_rates"]) / len(stats["heart_rates"]), 1)
     
     return jsonify(stats)
 
