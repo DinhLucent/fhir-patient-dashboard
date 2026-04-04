@@ -62,25 +62,27 @@ def api_stats():
         return jsonify({})
     
     all_obs = []
-    high_risk_count = 0
     for p in patients:
         all_obs.extend(p.observations)
-        # Clinical Rule: VTE Risk assessment for elderly
-        if p.age > 65:
-            high_risk_count += 1
+    
+    # Calculate averages for specific metrics
+    metrics_to_track = ["Heart rate", "Body temperature", "Glucose"]
+    metric_avgs = {}
+    
+    for metric in metrics_to_track:
+        values = [o.value for o in all_obs if o.display == metric]
+        if values:
+            metric_avgs[metric] = round(sum(values) / len(values), 2)
     
     stats = {
         "count": len(patients),
         "avg_age": round(sum(p.age for p in patients) / len(patients), 1),
         "vitals_recorded": len(all_obs),
+        "averages": metric_avgs,
         "clinical_flags": {
-            "vte_risk_elderly": high_risk_count
-        },
-        "heart_rates": [o.value for o in all_obs if o.display == "Heart rate"]
+            "vte_risk_elderly": len([p for p in patients if p.age > 65])
+        }
     }
-    
-    if stats["heart_rates"]:
-        stats["avg_heart_rate"] = round(sum(stats["heart_rates"]) / len(stats["heart_rates"]), 1)
     
     return jsonify(stats)
 

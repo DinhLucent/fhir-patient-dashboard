@@ -1,74 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FHIR Patient Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="glass-bg"></div>
-    
+
     <div class="container">
-        <header>
-            <h1>FHIR Patient Dashboard</h1>
-            <div class="header-stats">
-                <span>Active Patients: <strong id="patient-count">{{ patients|length }}</strong></span>
-                <span>Last Sync: <strong id="sync-time">2026-03-27 07:22</strong></span>
+      <header>
+        <div class="brand">
+          <h1>FHIR Clinical Dashboard</h1>
+          <p>Real-time Population & Patient Analytics</p>
+        </div>
+        <div class="header-stats">
+          <div class="stat-card">
+            <span class="label">Total Patients</span>
+            <span class="value" id="patient-count">{{ patients|length }}</span>
+          </div>
+          <div class="stat-card">
+            <span class="label">Avg Age</span>
+            <span class="value" id="avg-age">--</span>
+          </div>
+          <div class="stat-card">
+            <span class="label">High Risk</span>
+            <span class="value danger" id="risk-count">--</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="patient-selector">
+          <h2>Patients</h2>
+          <div class="patient-grid">
+            {% for p in patients %}
+            <div class="patient-card" onclick="selectPatient('{{ p.id }}')">
+              <div class="p-avatar">{{ p.name[0] }}</div>
+              <div class="p-info">
+                <h3>{{ p.name }}</h3>
+                <p>{{ p.gender|capitalize }}, {{ p.age }} years</p>
+              </div>
             </div>
-        </header>
+            {% endfor %}
+          </div>
+        </section>
 
-        <main>
-            <section class="patient-selector">
-                <h2>Patients</h2>
-                <div class="patient-grid">
-                    {% for p in patients %}
-                    <div class="patient-card" onclick="selectPatient('{{ p.id }}')">
-                        <div class="p-avatar">{{ p.name[0] }}</div>
-                        <div class="p-info">
-                            <h3>{{ p.name }}</h3>
-                            <p>{{ p.gender|capitalize }}, {{ p.age }} years</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
+        <section class="vital-signs">
+          <div class="section-header">
+            <h2>Vital Signs Analysis</h2>
+            <select id="metric-select" onchange="updateChart()">
+              <option value="Heart rate">Heart Rate</option>
+              <option value="Body temperature">Body Temperature</option>
+              <option value="Glucose">Blood Glucose</option>
+            </select>
+          </div>
+          <div class="chart-container">
+            <canvas id="vitalsChart"></canvas>
+          </div>
+        </section>
 
-            <section class="vital-signs">
-                <div class="section-header">
-                    <h2>Vital Signs Analysis</h2>
-                    <select id="metric-select" onchange="updateChart()">
-                        <option value="Heart rate">Heart Rate</option>
-                        <option value="Body temperature">Body Temperature</option>
-                        <option value="Glucose">Blood Glucose</option>
-                    </select>
-                </div>
-                <div class="chart-container">
-                    <canvas id="vitalsChart"></canvas>
-                </div>
-            </section>
-
-            <section class="observation-list">
-                <h2>Raw Observations</h2>
-                <table id="obs-table">
-                    <thead>
-                        <tr>
-                            <th>Metric</th>
-                            <th>Value</th>
-                            <th>Unit</th>
-                            <th>Timestamp</th>
-                        </tr>
-                    </thead>
-                    <tbody id="obs-body">
-                        <!-- Data populated by JS -->
-                    </tbody>
-                </table>
-            </section>
-        </main>
+        <section class="observation-list">
+          <h2>Raw Observations</h2>
+          <table id="obs-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Unit</th>
+                <th>Timestamp</th>
+              </tr>
+            </thead>
+            <tbody id="obs-body">
+              <!-- Data populated by JS -->
+            </tbody>
+          </table>
+        </section>
+      </main>
     </div>
 
     <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
-</body>
+  </body>
 </html>

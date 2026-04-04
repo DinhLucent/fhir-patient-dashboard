@@ -8,18 +8,18 @@
                 "id": "p1",
                 "name": [
                     {
-                        "family": "Doe",
+                        "family": "Garcia",
                         "given": [
-                            "John"
+                            "Henry"
                         ]
                     }
                 ],
-                "gender": "male",
-                "birthDate": "1985-06-12",
+                "gender": "female",
+                "birthDate": "2009-10-12",
                 "telecom": [
                     {
                         "system": "phone",
-                        "value": "555-0101"
+                        "value": "555-9649"
                     }
                 ]
             }
@@ -28,16 +28,6 @@
             "resource": {
                 "resourceType": "Observation",
                 "status": "final",
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "vital-signs"
-                            }
-                        ]
-                    }
-                ],
                 "code": {
                     "coding": [
                         {
@@ -50,9 +40,101 @@
                 "subject": {
                     "reference": "Patient/p1"
                 },
-                "effectiveDateTime": "2024-03-27T08:00:00Z",
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
                 "valueQuantity": {
-                    "value": 72,
+                    "value": 76.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 99.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 69.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 60.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 66.3,
                     "unit": "bpm"
                 }
             }
@@ -73,9 +155,101 @@
                 "subject": {
                     "reference": "Patient/p1"
                 },
-                "effectiveDateTime": "2024-03-27T08:05:00Z",
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
                 "valueQuantity": {
-                    "value": 36.8,
+                    "value": 38.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.0,
                     "unit": "C"
                 }
             }
@@ -96,9 +270,4138 @@
                 "subject": {
                     "reference": "Patient/p1"
                 },
-                "effectiveDateTime": "2024-03-27T08:10:00Z",
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
                 "valueQuantity": {
-                    "value": 95,
+                    "value": 124.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 103.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 130.7,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 94.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p1"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 118.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p2",
+                "name": [
+                    {
+                        "family": "Doe",
+                        "given": [
+                            "Frank"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1973-12-19",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-6860"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 86.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 100.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 80.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 63.5,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 68.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.8,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.0,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 128.9,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 139.4,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 106.3,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 127.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p2"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 109.5,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p3",
+                "name": [
+                    {
+                        "family": "Brown",
+                        "given": [
+                            "Charlie"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "2005-01-26",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-2073"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 97.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 76.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 76.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 89.5,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 64.5,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.3,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 121.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 128.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 104.4,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 91.5,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p3"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 116.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p4",
+                "name": [
+                    {
+                        "family": "Williams",
+                        "given": [
+                            "Frank"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1993-10-27",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-4910"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 93.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 61.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 83.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 83.8,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 80.8,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.3,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 112.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 139.8,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 114.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 133.5,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p4"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 82.3,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p5",
+                "name": [
+                    {
+                        "family": "Garcia",
+                        "given": [
+                            "Charlie"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1962-08-12",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-6958"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 99.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 92.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 61.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 97.6,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 65.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.8,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 37.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.8,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 38.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 138.5,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 105.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 98.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 80.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p5"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 138.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p6",
+                "name": [
+                    {
+                        "family": "Doe",
+                        "given": [
+                            "Charlie"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1955-04-07",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-9956"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 87.5,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 96.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 82.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 87.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 67.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.0,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 36.6,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.483452",
+                "valueQuantity": {
+                    "value": 118.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.483452",
+                "valueQuantity": {
+                    "value": 127.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.483452",
+                "valueQuantity": {
+                    "value": 85.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.483452",
+                "valueQuantity": {
+                    "value": 107.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p6"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.483452",
+                "valueQuantity": {
+                    "value": 136.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p7",
+                "name": [
+                    {
+                        "family": "Smith",
+                        "given": [
+                            "Charlie"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1966-11-18",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-3570"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 77.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 90.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 90.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 80.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 77.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.9,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.3,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 118.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 103.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 137.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 124.7,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p7"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 93.9,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p8",
+                "name": [
+                    {
+                        "family": "Williams",
+                        "given": [
+                            "Grace"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1969-08-05",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-4102"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 66.1,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 78.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 65.1,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 89.6,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 77.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.9,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.6,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.6,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 97.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 111.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 132.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 119.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p8"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 108.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p9",
+                "name": [
+                    {
+                        "family": "Miller",
+                        "given": [
+                            "John"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1984-07-06",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-2220"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 63.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 86.3,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 88.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 89.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 92.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.0,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 103.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 107.3,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 117.9,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 87.4,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p9"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 95.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p10",
+                "name": [
+                    {
+                        "family": "Brown",
+                        "given": [
+                            "Jane"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1999-10-08",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-2874"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 72.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 88.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 78.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 87.5,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 81.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.4,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 135.8,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 139.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 133.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 132.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p10"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 114.0,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p11",
+                "name": [
+                    {
+                        "family": "Miller",
+                        "given": [
+                            "Charlie"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1957-02-26",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-6528"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 83.4,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 99.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 86.7,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 66.8,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 95.0,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.5,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.8,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 38.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 36.2,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 37.6,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 121.2,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 115.1,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 124.3,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 130.5,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p11"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 106.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "p12",
+                "name": [
+                    {
+                        "family": "Jones",
+                        "given": [
+                            "Henry"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1981-08-05",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "555-5098"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.484960",
+                "valueQuantity": {
+                    "value": 82.9,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.484960",
+                "valueQuantity": {
+                    "value": 88.2,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.484960",
+                "valueQuantity": {
+                    "value": 82.6,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.484960",
+                "valueQuantity": {
+                    "value": 97.6,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.484960",
+                "valueQuantity": {
+                    "value": 84.8,
+                    "unit": "bpm"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.485520",
+                "valueQuantity": {
+                    "value": 38.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.485520",
+                "valueQuantity": {
+                    "value": 37.7,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.485520",
+                "valueQuantity": {
+                    "value": 36.9,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.485520",
+                "valueQuantity": {
+                    "value": 37.1,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.485520",
+                "valueQuantity": {
+                    "value": 36.8,
+                    "unit": "C"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T09:52:05.485520",
+                "valueQuantity": {
+                    "value": 115.9,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T13:52:05.485520",
+                "valueQuantity": {
+                    "value": 134.4,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T17:52:05.485520",
+                "valueQuantity": {
+                    "value": 116.6,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-03T21:52:05.485520",
+                "valueQuantity": {
+                    "value": 104.8,
+                    "unit": "mg/dL"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/p12"
+                },
+                "effectiveDateTime": "2026-04-04T01:52:05.485520",
+                "valueQuantity": {
+                    "value": 139.0,
                     "unit": "mg/dL"
                 }
             }

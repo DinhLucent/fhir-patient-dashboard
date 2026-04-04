@@ -2,18 +2,32 @@ let allPatients = [];
 let currentPatient = null;
 let chart = null;
 
+let populationStats = null;
+
 async function loadInitialData() {
     try {
-        const response = await fetch('/api/patients');
-        allPatients = await response.json();
+        // Fetch Patient Data
+        const pResponse = await fetch('/api/patients');
+        allPatients = await pResponse.json();
 
-        // Auto-select first patient if none selected
+        // Fetch Population Stats
+        const sResponse = await fetch('/api/stats');
+        populationStats = await sResponse.json();
+        updateHeaderStats();
+
+        // Auto-select first patient
         if (allPatients.length > 0 && !currentPatient) {
             selectPatient(allPatients[0].id);
         }
     } catch (err) {
         console.error("Failed to load clinical data:", err);
     }
+}
+
+function updateHeaderStats() {
+    if (!populationStats) return;
+    document.getElementById('avg-age').textContent = populationStats.avg_age;
+    document.getElementById('risk-count').textContent = populationStats.clinical_flags.vte_risk_elderly;
 }
 
 function selectPatient(id) {
@@ -33,10 +47,11 @@ function selectPatient(id) {
 }
 
 function updateChart() {
-    if (!currentPatient) return;
+    if (!currentPatient || !populationStats) return;
 
     const metric = document.getElementById('metric-select').value;
     const data = currentPatient.observations.filter(o => o.display === metric);
+    const avgValue = populationStats.averages[metric] || 0;
 
     const ctx = document.getElementById('vitalsChart').getContext('2d');
 
@@ -46,16 +61,26 @@ function updateChart() {
         type: 'line',
         data: {
             labels: data.map(o => new Date(o.time).toLocaleTimeString()),
-            datasets: [{
-                label: `${metric} (${data[0]?.unit || ''})`,
-                data: data.map(o => o.value),
-                borderColor: '#4cc9f0',
-                backgroundColor: 'rgba(76, 201, 240, 0.1)',
-                tension: 0.4,
-                fill: true,
-                pointRadius: 6,
-                pointBackgroundColor: '#4cc9f0'
-            }]
+            datasets: [
+                {
+                    label: `Patient ${metric} (${data[0]?.unit || ''})`,
+                    data: data.map(o => o.value),
+                    borderColor: '#4cc9f0',
+                    backgroundColor: 'rgba(76, 201, 240, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#4cc9f0'
+                },
+                {
+                    label: `Population Average`,
+                    data: data.map(() => avgValue), // Flat line for average
+                    borderColor: 'rgba(255, 255, 255, 0.3)',
+                    borderDash: [5, 5],
+                    pointRadius: 0,
+                    fill: false
+                }
+            ]
         },
         options: {
             responsive: true,
@@ -71,7 +96,10 @@ function updateChart() {
                 }
             },
             plugins: {
-                legend: { display: false },
+                legend: { 
+                    display: true,
+                    labels: { color: 'rgba(255, 255, 255, 0.7)', font: { family: 'Outfit' } }
+                },
                 tooltip: {
                     backgroundColor: 'rgba(0, 0, 0, 0.8)',
                     titleFont: { family: 'Outfit' },
